@@ -1,1 +1,2 @@
 # VkCourse
+Michael Galperin
