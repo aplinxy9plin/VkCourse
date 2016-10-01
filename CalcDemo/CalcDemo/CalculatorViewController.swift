@@ -10,19 +10,26 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
     
-    @IBOutlet weak var generalStackView: UIStackView!
-    @IBOutlet weak var geometryStackView: UIStackView!
-    @IBOutlet weak var btnFuncs: UIButton!
-    @IBOutlet weak var algebraStackView: UIStackView!
-    @IBOutlet weak var display: TextfieldInset!
+    //
+    
+    @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var portraitStack: UIStackView!
+    @IBOutlet weak var btnEquals: UIButton!
+    @IBOutlet weak var bottomStack: UIStackView!
+    @IBOutlet weak var landscapeUnderlayerView: UIView!
+    @IBOutlet weak var landscapeBtnEquals: UIButton!
+    @IBOutlet weak var landscapeBtnClear: UIButton!
     
     fileprivate var brain = CalcBrain()
     fileprivate var isInMiddleOfTyping = false
     fileprivate var displayValue: Double {
         get { return Double(display.text!)! }
-        set { display.text = String(newValue) }
+        set {
+            display.text = ["nan", "inf"].contains(String(newValue)) ? "Ошибка" : String(newValue)
+            if display.text == "Ошибка" { isInMiddleOfTyping = false }
+        }
     }
-    fileprivate let lblInfo: UILabel = {
+    /*fileprivate let lblInfo: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont.systemFont(ofSize: 14, weight: UIFontWeightThin)
@@ -31,13 +38,15 @@ class CalculatorViewController: UIViewController {
         lbl.adjustsFontSizeToFitWidth = true
         lbl.text = "Функция"
         return lbl
-    }()
+    }()*/
+    var isPortrait: Bool { get { return UIApplication.shared.statusBarOrientation == .portrait }}
 }
 
 extension CalculatorViewController {//user contacted
     @IBAction func touchedDigit(_ sender: UIButton) {
         guard let digit = sender.currentTitle else { return }
         if isInMiddleOfTyping {
+            if digit == "0" && display.text == "0" { return }
             if digit == "." {
                 if !display.text!.contains("."){
                     display.text = display.text! + digit
@@ -45,7 +54,6 @@ extension CalculatorViewController {//user contacted
             } else {
                 display.text = display.text! + digit
             }
-            
         } else {
             display.text = digit
         }
@@ -60,24 +68,16 @@ extension CalculatorViewController {//user contacted
         }
         if let symbol = sender.currentTitle {
             brain.performOperation(symbol: symbol)
-            lblInfo.text = "Операция"
-            setFuncTitle(with: symbol)
         }
         displayValue = brain.result
     }
     
-    fileprivate func setFuncTitle(with title: String){
-        btnFuncs.setTitle("\"\(title)\"", for: .normal)
-        btnFuncs.setTitleColor(rgb(128, 0, 0), for: .normal)
-        btnFuncs.titleLabel?.font = UIFont.systemFont(ofSize: 30, weight: UIFontWeightLight)
-    }
-    
     @IBAction func touchedHelpers(_ sender: UIButton) {
         guard let title = sender.currentTitle else { return }
-        setFuncTitle(with: title)
         switch title {
             case "C":
                 displayValue = 0
+                brain.nullify()
             case "⬅︎":
                 if display.text == "0.0" { break }
                 display.text = display.text!.characters.count > 1 ? String(display.text!.characters.dropLast()) : "0.0"
@@ -96,27 +96,24 @@ extension CalculatorViewController {//View
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        display.isUserInteractionEnabled = false
         NotificationCenter.default.addObserver(self, selector: #selector(self.orientationChanged), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         
-        setupBtnFuncsInfoLabel()
+        setupLandscapeButtons()
+        
     }
-    private func setupBtnFuncsInfoLabel(){
-        btnFuncs.addSubview(lblInfo)
-        lblInfo.topAnchor.constraint(equalTo: btnFuncs.topAnchor, constant: 6).isActive = true
-        lblInfo.centerXAnchor.constraint(equalTo: btnFuncs.centerXAnchor).isActive = true
+    private func setupLandscapeButtons(){
+        landscapeBtnEquals.layer.borderColor = rgb(0, 121, 107).cgColor
+        landscapeBtnEquals.layer.borderWidth = 1
+        landscapeBtnClear.layer.borderColor = landscapeBtnEquals.layer.borderColor
+        landscapeBtnClear.layer.borderWidth = landscapeBtnEquals.layer.borderWidth
     }
     func orientationChanged(){
-        let isLandscape = UIDevice.current.orientation.isLandscape
-        geometryStackView.isHidden = isLandscape
-        algebraStackView.isHidden = isLandscape
-        
-        let operationBtnColor = rgb(0, 122, 255)
-        btnFuncs.setTitle(isLandscape ? "×" : "", for: .normal)
-        btnFuncs.setTitleColor(isLandscape ? operationBtnColor : .black, for: .normal)
-        btnFuncs.titleLabel?.font = UIFont.boldSystemFont(ofSize: isLandscape ? 35 : 15)
-        btnFuncs.backgroundColor = isLandscape ? rgb(215, 215, 215) : rgb(233, 233, 233)
-        lblInfo.text = isLandscape ? "" : "Функция"
+        //Portrait
+        portraitStack.isHidden = !isPortrait
+        bottomStack.isHidden = !isPortrait
+        btnEquals.isHidden = !isPortrait
+        //Landscape
+        landscapeUnderlayerView.isHidden = isPortrait //UnderlayerView
     }
 }
 

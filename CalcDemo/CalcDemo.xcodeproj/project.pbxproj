@@ -14,8 +14,6 @@
 		C374FE231D9595E9008F497D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C374FE221D9595E9008F497D /* Assets.xcassets */; };
 		C374FE261D9595E9008F497D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C374FE241D9595E9008F497D /* LaunchScreen.storyboard */; };
 		C374FE311D968521008F497D /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374FE301D968521008F497D /* Library.swift */; };
-		C374FE341D968CB4008F497D /* TextfieldInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374FE331D968CB4008F497D /* TextfieldInset.swift */; };
-		C3CB1A481D9DAEB200B5C54F /* CalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CB1A471D9DAEB200B5C54F /* CalcButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +26,6 @@
 		C374FE251D9595E9008F497D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C374FE271D9595E9008F497D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C374FE301D968521008F497D /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
-		C374FE331D968CB4008F497D /* TextfieldInset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldInset.swift; sourceTree = "<group>"; };
-		C3CB1A471D9DAEB200B5C54F /* CalcButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +68,6 @@
 			children = (
 				C374FE1B1D9595E9008F497D /* AppDelegate.swift */,
 				C374FE2F1D968509008F497D /* Helpers */,
-				C374FE321D968C9B008F497D /* View */,
 				C30C85F11D9D910F00B22FBD /* Model */,
 				C374FE2E1D968504008F497D /* Controller */,
 				C374FE1F1D9595E9008F497D /* Main.storyboard */,
@@ -105,15 +100,6 @@
 				C374FE301D968521008F497D /* Library.swift */,
 			);
 			name = Helpers;
-			sourceTree = "<group>";
-		};
-		C374FE321D968C9B008F497D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C374FE331D968CB4008F497D /* TextfieldInset.swift */,
-				C3CB1A471D9DAEB200B5C54F /* CalcButton.swift */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +178,6 @@
 				C374FE1E1D9595E9008F497D /* CalculatorViewController.swift in Sources */,
 				C374FE1C1D9595E9008F497D /* AppDelegate.swift in Sources */,
 				C374FE311D968521008F497D /* Library.swift in Sources */,
-				C3CB1A481D9DAEB200B5C54F /* CalcButton.swift in Sources */,
-				C374FE341D968CB4008F497D /* TextfieldInset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

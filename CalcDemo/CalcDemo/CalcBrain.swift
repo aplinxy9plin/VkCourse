@@ -13,6 +13,12 @@ infix operator ^^ : PowerPrecedence
 func ^^ (radix: Double, power: Double) -> Double {
     return pow(radix, power)
 }
+func factorial(_ k: Double) -> Double {//think it might be removed
+    if k > 103 {
+        return 0
+    }
+    return k <= 1 ? 1 : factorial(k - 1) * k
+}
 
 class CalcBrain {
     
@@ -22,37 +28,53 @@ class CalcBrain {
         accumulator = operand
     }
     
-    var operations: Dictionary<String,Operation> = [
-        "π" : Operation.Constant(M_PI),
-        "√" : Operation.UnaryOperation(sqrt),
-        "×" : Operation.BinaryOperation({$0 * $1}),
-        "÷" : Operation.BinaryOperation({$0 / $1}),
-        "−" : Operation.BinaryOperation({$0 - $1}),
-        "+" : Operation.BinaryOperation({$0 + $1}),
-        "±" : Operation.UnaryOperation({ $0 != 0 ? -$0 : 0 }),
-        "x²": Operation.UnaryOperation({ $0 ^^ 2}),
-        "sin": Operation.UnaryOperation(sin),
-        "cos": Operation.UnaryOperation(cos),
-        "tg": Operation.UnaryOperation(tan),
-        "%": Operation.UnaryOperation({$0 / 100}),
-        "=": Operation.Equals
-    ]
+    func nullify(){
+        accumulator = 0
+        pending = nil
+    }
     
-    enum Operation {
+    private enum Operation {
         case Constant(Double)
-        case UnaryOperation((Double) -> Double)
-        case BinaryOperation((Double, Double) -> Double)
+        case Unary((Double) -> Double)
+        case Binary((Double, Double) -> Double)
         case Equals
     }
+    
+    private var operations: Dictionary<String,Operation> = [
+        "π" : Operation.Constant(M_PI),
+        "e": Operation.Constant(M_E),
+        "√" : Operation.Unary(sqrt),
+        "×" : Operation.Binary({$0 * $1}),
+        "÷" : Operation.Binary({$0 / $1}),
+        "−" : Operation.Binary({$0 - $1}),
+        "+" : Operation.Binary({$0 + $1}),
+        "±" : Operation.Unary({ $0 != 0 ? -$0 : 0 }),
+        "x²": Operation.Unary({ $0 ^^ 2}),
+        "x³": Operation.Unary({ $0 ^^ 3 }),
+        "x!": Operation.Unary(factorial),
+        "sin": Operation.Unary(sin),
+        "cos": Operation.Unary(cos),
+        "tg": Operation.Unary(tan),
+        "sec": Operation.Unary({ 1 / cos($0) }),
+        "cosec": Operation.Unary({ 1 / sin($0) }),
+        "ctg" : Operation.Unary({ 1 / tan($0) }),
+        "log₂": Operation.Unary({ log2($0) }),
+        "log₁₀": Operation.Unary({ log10($0) }),
+        "ln": Operation.Unary({ log($0) / log(M_E) }),
+        "Round": Operation.Unary({ round($0) }),
+        "eˣ": Operation.Unary({ M_E ^^ $0 }),
+        "%": Operation.Unary({$0 / 100}),
+        "=": Operation.Equals
+    ]
     
     func performOperation(symbol: String){
         if let operation = operations[symbol] {
             switch operation {
                 case .Constant(let c):
                     accumulator = c
-                case .UnaryOperation(let unaryFunc):
+                case .Unary(let unaryFunc):
                     accumulator = unaryFunc(accumulator)
-                case .BinaryOperation(let binaryFunc):
+                case .Binary(let binaryFunc):
                     executePending()
                     pending = PendingBinaryInfo(binaryFunction: binaryFunc, firstOperand: accumulator)
                 case .Equals:
@@ -69,10 +91,9 @@ class CalcBrain {
     }
     
     private var pending: PendingBinaryInfo?
-    struct PendingBinaryInfo {
+    private struct PendingBinaryInfo {
         var binaryFunction: (Double, Double) -> Double
         var firstOperand: Double
-        
     }
     
     var result: Double {
