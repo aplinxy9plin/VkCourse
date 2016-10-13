@@ -40,7 +40,7 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="i2E-eE-e6z">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVt-GK-Lcr">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVt-GK-Lcr">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -51,7 +51,7 @@
                                                     <action selector="touchedHelpers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ib-z6-7Nj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qd-Vr-iTT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qd-Vr-iTT">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -62,7 +62,7 @@
                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpn-g5-SPR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woW-wg-E23">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woW-wg-E23">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -73,7 +73,7 @@
                                                     <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDV-Rm-zxT"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QT3-yF-LlD">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QT3-yF-LlD">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -88,7 +88,7 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="NWK-zO-jhc">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQ5-wV-NL8">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQ5-wV-NL8">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -99,7 +99,7 @@
                                                     <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dxt-HS-119"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHZ-Fn-NJA">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHZ-Fn-NJA">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -110,7 +110,7 @@
                                                     <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNO-15-YY6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ec6-9E-tFk">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ec6-9E-tFk">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -121,7 +121,7 @@
                                                     <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tw8-Nt-67O"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ei0-0F-ZBs">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ei0-0F-ZBs">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -136,7 +136,7 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qgb-2U-Tf2">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS8-H1-Uv4">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS8-H1-Uv4">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -147,7 +147,7 @@
                                                     <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iGq-4F-HRh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msn-ve-qoq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msn-ve-qoq">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -158,7 +158,7 @@
                                                     <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJi-fv-sPf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgK-Zp-ohF">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgK-Zp-ohF">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -169,7 +169,7 @@
                                                     <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rc2-2r-8jN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spy-On-DRA">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spy-On-DRA">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -184,7 +184,7 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tid-ay-UOS">
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9I-Dg-H2Z">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9I-Dg-H2Z">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -195,7 +195,7 @@
                                                     <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JPp-o7-WST"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj3-rR-cHd">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj3-rR-cHd">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -206,7 +206,7 @@
                                                     <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gA7-Dy-VpE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-2y-RPm">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-2y-RPm">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -217,7 +217,7 @@
                                                     <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FBe-sb-vWW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnu-ZS-cwP">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnu-ZS-cwP">
                                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -234,7 +234,7 @@
                             </stackView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="jBK-DA-9LY" userLabel="bottomStack">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QR3-Ip-lpq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QR3-Ip-lpq">
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -245,7 +245,7 @@
                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfF-KJ-sg4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXf-Bt-11l">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXf-Bt-11l">
                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -258,7 +258,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfi-za-3jj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfi-za-3jj">
                                 <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -275,7 +275,7 @@
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iy3-XG-Gq7">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhI-4i-7XH">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhI-4i-7XH">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
@@ -286,7 +286,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="piF-Uk-OeV"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG6-fh-q74">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG6-fh-q74">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -297,7 +297,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSB-h2-OPx"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEd-wZ-s1u">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEd-wZ-s1u">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -308,7 +308,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AAl-Ru-JMx"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ia-rD-I9g">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ia-rD-I9g">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -319,7 +319,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sQ-oK-Afe"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-ty-9Sv">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-ty-9Sv">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -334,7 +334,7 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="SA2-vu-bN2">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JO-Vx-vjg">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JO-Vx-vjg">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
@@ -345,7 +345,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZL-Pu-7Kc"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oO2-rf-Z8M">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oO2-rf-Z8M">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -356,7 +356,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hht-xf-dfO"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cf-BB-VBu">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cf-BB-VBu">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -367,7 +367,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ms3-od-s4t"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjk-O4-f1W">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjk-O4-f1W">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -378,7 +378,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLb-Sa-LKq"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZb-2L-NWT">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZb-2L-NWT">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
@@ -393,7 +393,7 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="hA8-xd-NW6">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3p-uo-xEl">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3p-uo-xEl">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
@@ -404,7 +404,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBr-vZ-ACx"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imW-5u-v4i">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imW-5u-v4i">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -415,7 +415,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tda-T7-0L0"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIh-WM-ghy">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIh-WM-ghy">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -426,7 +426,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUr-Y8-EXY"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agb-xy-f9X">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agb-xy-f9X">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -437,7 +437,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10t-Dz-Wyl"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ge-IW-EbV">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ge-IW-EbV">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
@@ -452,7 +452,7 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Ek-sl-0AK">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xki-RZ-oFM">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xki-RZ-oFM">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -463,7 +463,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hek-gs-HZ0"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLi-Ne-L8R">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLi-Ne-L8R">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -474,7 +474,7 @@
                                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnK-y1-cmV"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baP-4v-6rz">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baP-4v-6rz">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -485,7 +485,7 @@
                                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZT-kd-enk"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRL-if-pmd">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRL-if-pmd">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -496,7 +496,7 @@
                                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5E-Vl-xSa"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqV-rc-pCo">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqV-rc-pCo">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
@@ -511,7 +511,7 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tus-QG-DDQ">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fa-kw-3Ii">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fa-kw-3Ii">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -522,7 +522,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dU-Vc-b0w"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fi-fz-ldw">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fi-fz-ldw">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -533,7 +533,7 @@
                                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FRm-Tz-fgS"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZX-AG-o5d">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZX-AG-o5d">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -544,7 +544,7 @@
                                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nzY-So-Q63"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-is-dEB">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-is-dEB">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -555,7 +555,7 @@
                                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2C-Wr-F0Q"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TK-ig-MAB">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TK-ig-MAB">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -570,7 +570,7 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="p4a-nF-hp5">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uj0-f5-E3b">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uj0-f5-E3b">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -581,7 +581,7 @@
                                                             <action selector="touchedHelpers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UV6-Bu-SQR"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHO-MU-xFb">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHO-MU-xFb">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -592,7 +592,7 @@
                                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xaF-0m-21w"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VD4-Ct-Iac">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VD4-Ct-Iac">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -603,7 +603,7 @@
                                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7E-io-cvl"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vo-ch-qHb">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vo-ch-qHb">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -614,7 +614,7 @@
                                                             <action selector="touchedDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aps-lj-8pQ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRv-78-HRd">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRv-78-HRd">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
@@ -629,7 +629,7 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jg8-eZ-Q3p">
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lF-jo-vVe">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lF-jo-vVe">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -640,7 +640,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fX7-gd-qER"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZM-tt-zui">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZM-tt-zui">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -651,7 +651,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0NU-aU-PPk"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xai-SZ-bJS">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xai-SZ-bJS">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -662,7 +662,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovA-Fz-Job"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qg-KY-FHu">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qg-KY-FHu">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
@@ -673,7 +673,7 @@
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fw9-pe-oys"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMP-Um-uCQ">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMP-Um-uCQ">
                                                         <color key="backgroundColor" red="0.33725490200000002" green="0.70980392160000005" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration" hint="" identifier="800C6D59-8FDB-4A8A-87E5-1CD05370AE68" label=""/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
