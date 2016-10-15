@@ -18,7 +18,7 @@
 		]},
 		{"title": "Банк Русский Стандарт", "imageName": "bank-russkiy-standart-logo", "color": "128 128 128", "places": [
 			{"street": "Ленинский проспект, 49", "distance": 400, "workTime": "10:00 - 21:00"},
-			{"street": "проспект Вернадского, 1А", "distance": 700, "workTime": "09:00 - 22:00"},
+			{"street": "проспект Вернадского, 1А", "distance": 700, "workTime": "08:00 - 22:00"},
 			{"street": "улица Косыгина, 19 корпус 1", "distance": 6400, "workTime": "10:00 - 22:00"},
 			{"street": "Минская улица, 1", "distance": 400, "workTime": "10:00 - 21:00"},
 			{"street": "Давыдковская улица, 16", "distance": 700, "workTime": "09:00 - 22:00"},
@@ -30,7 +30,7 @@
 			{"street": "Довженко улица, 12А", "distance": 6400, "workTime": "10:00 - 22:00"},
 			{"street": "улица Артамонова, 14", "distance": 400, "workTime": "10:00 - 21:00"},
 			{"street": "улица Козлова, 27", "distance": 700, "workTime": "09:00 - 22:00"},
-			{"street": "Гжатская улица, 4 корпус 2", "distance": 6400, "workTime": "10:00 - 22:00"}
+			{"street": "Гжатская улица, 4 корпус 2", "distance": 6400, "workTime": "10:00 - 23:00"}
 		]},
 		{"title": "Банк Открытие", "imageName": "logo_bank_otkrytie1", "color": "0 128 255", "places": [
 			{"street": "наб. р. Фонтанки, д. 45", "distance": 700, "workTime": "09:00 - 22:00"},
