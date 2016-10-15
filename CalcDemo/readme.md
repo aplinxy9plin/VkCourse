@@ -1,6 +1,8 @@
 # CalcDemo
 
 <hr>
-![alt tag](Screens/Portrait.png?raw=true) 
+Portrait:<br>
+![alt tag](Screens/1.png?raw=true) 
 <hr>
-![alt tag](Screens/Landscape.png?raw=true)
+Landscape:<br>
+![alt tag](Screens/2.png?raw=true)
