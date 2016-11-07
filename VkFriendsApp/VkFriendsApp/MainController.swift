@@ -82,6 +82,7 @@ extension MainController {
         
     }
     func handleAuth(){
+        segmentValueChanged(segmentedControl)
         btnExit.isEnabled = true
         fetchFriends()
     }
@@ -150,6 +151,12 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
    
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.frame.size.height / 7
+        var itemsAtScreen: CGFloat = 7
+        switch UIScreen.main.bounds.size.height {
+            case 568: itemsAtScreen = 5 //5s
+            case 1...567: itemsAtScreen = 4
+            default: break
+        }
+        return tableView.frame.size.height / itemsAtScreen
     }
 }

@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ska-UF-2PG" id="uU3-ZB-tQz">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="81"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q9G-Jf-zNd">
@@ -74,9 +74,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="SKJ-d2-alP" secondAttribute="bottom" constant="16" id="1dQ-p7-Q1v"/>
                                                 <constraint firstItem="q9G-Jf-zNd" firstAttribute="centerY" secondItem="uU3-ZB-tQz" secondAttribute="centerY" id="E1q-LN-AlV"/>
                                                 <constraint firstItem="SKJ-d2-alP" firstAttribute="leading" secondItem="q9G-Jf-zNd" secondAttribute="trailing" constant="8" id="FUc-lv-Or5"/>
+                                                <constraint firstItem="SKJ-d2-alP" firstAttribute="top" secondItem="Lre-bG-zE0" secondAttribute="bottom" constant="-3" id="Ltk-3v-BlZ"/>
                                                 <constraint firstItem="Lre-bG-zE0" firstAttribute="leading" secondItem="q9G-Jf-zNd" secondAttribute="trailing" constant="8" id="SoD-Z4-imY"/>
                                                 <constraint firstAttribute="trailing" secondItem="SKJ-d2-alP" secondAttribute="trailing" constant="8" id="cJE-nl-5LO"/>
                                                 <constraint firstAttribute="trailing" secondItem="Lre-bG-zE0" secondAttribute="trailing" constant="8" id="cmm-UM-xG8"/>
@@ -90,11 +90,11 @@
                                             <outlet property="lblFio" destination="Lre-bG-zE0" id="IBc-IU-FcR"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="vkAloneCellID" rowHeight="81" id="lle-SW-hYG" customClass="AloneCell" customModule="VkFriendsApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="vkAloneCellID" rowHeight="81" id="lle-SW-hYG" customClass="AloneCell" customModule="VkFriendsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="109" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lle-SW-hYG" id="U0D-YA-Jbw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V6h-7k-Rld">
@@ -178,6 +178,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="settings" width="25" height="25"/>
+        <image name="settings" width="22" height="22"/>
     </resources>
 </document>
