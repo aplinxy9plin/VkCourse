@@ -1,5 +1,6 @@
 import UIKit
 import SwiftyVK
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,15 +12,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         VK.configure(appID: "5702613", delegate: self)
         VK.defaults.language = "en"
         
+        let mainColor = UIColor(red: 82 / 255, green: 123 / 255, blue: 176 / 255, alpha: 1)
+        
         UINavigationBar.appearance().tintColor = .white
-        UINavigationBar.appearance().barTintColor = UIColor(red: 82 / 255, green: 123 / 255, blue: 176 / 255, alpha: 1)
+        UINavigationBar.appearance().barTintColor = mainColor
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        SVProgressHUD.setDefaultStyle(.custom)
+        SVProgressHUD.setBackgroundColor(mainColor)
+        SVProgressHUD.setForegroundColor(.white)
+        SVProgressHUD.setRingRadius(8)
+        SVProgressHUD.setRingThickness(2)
         
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        VK.process(url: url, options: options)
+        VK.processURL(url: url, options: options)
         return true
     }
     

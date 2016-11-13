@@ -1,6 +1,7 @@
 import UIKit
 import SwiftyVK
 import MapKit
+import Fakery
 
 extension UISegmentedControl {
     var index: Int { get { return self.selectedSegmentIndex } }
@@ -30,10 +31,13 @@ class MainController: UIViewController {
     enum AppObject { case Map, List }
     
     func performDisplay(object: AppObject){
-        _ = [mapView, tableView].map{$0.isHidden = true}
+        _ = [mapView, tableView].map{ $0.isHidden = true }
         switch object {
         case .Map:
             mapView.isHidden = false
+            if mapView.annotations.count == 0 {
+                friendsToMap()
+            }
         case .List:
             tableView.isHidden = false
             if tableData.count == 0 {
@@ -49,6 +53,7 @@ class MainController: UIViewController {
     @IBAction func btnExitTapped(_ sender: UIBarButtonItem) {
         let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         sheet.addAction(UIAlertAction(title: "Test alone mode", style: .default){act in
+            self.mapView.removeAnnotations(self.tableData)
             self.tableData.removeAll()
             self.tableView.reloadData()
         })
@@ -79,12 +84,21 @@ extension MainController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleAuth), name: notif("auth_proceeded"), object: nil)
         
-        
     }
     func handleAuth(){
         segmentValueChanged(segmentedControl)
         btnExit.isEnabled = true
         fetchFriends()
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "show profile screen", let dest = segue.destination as? ProfileController {
+            dest.user = sender as! VkUser
+            dest.title = "Profile"
+            
+            let back = UIBarButtonItem()
+            back.title = mapView.isHidden ? "List" : "Map"
+            navigationItem.backBarButtonItem = back
+        }
     }
 }
 
@@ -94,8 +108,9 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
         if VK.state != .authorized || executingUpdate { return }
         
         executingUpdate = true
+        let faker = Faker(locale: "ru-RU")
         
-        _ = VK.API.Friends.get([VK.Arg.fields: "city,photo_100,education"]).send(method: .GET, onSuccess: { (json) in
+        _ = VK.API.Friends.get([VK.Arg.fields: "city,photo_200,education"]).send(method: .GET, onSuccess: { (json) in
             
             DispatchQueue.main.async(execute: {
                 refresh?.endRefreshing()
@@ -113,11 +128,14 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
                             city = user["online"].intValue == 0 ? "Offline" : "Online"
                         }
                     }
-                    let friend = VkUser(fio: "\(user["first_name"].stringValue) \(user["last_name"].stringValue)", city: city, avaLink: user["photo_100"].stringValue)
+                    let location = CLLocationCoordinate2D(latitude: faker.address.latitude(), longitude: faker.address.longitude())
+                    let friend = VkUser(id: user["id"].stringValue,fio: "\(user["first_name"].stringValue) \(user["last_name"].stringValue)", city: city, avaLink: user["photo_200"].stringValue, coords: location)
                     self.tableData.append(friend)
                 }
                 DispatchQueue.main.async(execute: {
                     self.tableView.reloadData()
+                    self.mapView.removeAnnotations(self.tableData)
+                    self.friendsToMap()
                 })
             }
             }, onError: { (err) in
@@ -144,9 +162,7 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         
         if tableData.count > 0 {
-            let alert = UIAlertController(title: "Something will happen here, later", message: nil, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
+            performSegue(withIdentifier: "show profile screen", sender: tableData[indexPath.row])
         }
    
     }
@@ -160,3 +176,56 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
         return tableView.frame.size.height / itemsAtScreen
     }
 }
+
+// MARK: - MKMapViewDelegate
+extension MainController: MKMapViewDelegate {
+    func friendsToMap(){
+        
+        if tableData.count > 0 {
+            for user in tableData {
+                if !mapView.annotations.contains(where: {$0.title! == user.title!}) {
+                    mapView.addAnnotation(user)
+                }
+            }
+            
+            let lat = tableData.sorted(by: { (user1, user2) -> Bool in
+                return user1.coordinate.latitude < user2.coordinate.latitude
+            })
+            let minLat = lat.first!.coordinate.latitude
+            let maxLat = lat.last!.coordinate.latitude
+            
+            let lng = tableData.sorted(by: { (user1, user2) -> Bool in
+                return user1.coordinate.longitude < user2.coordinate.longitude
+            })
+            let minLng = lng.first!.coordinate.longitude
+            let maxLng = lng.last!.coordinate.longitude
+            
+            let center = CLLocationCoordinate2DMake((minLat + maxLat) / 2.0, (minLng + maxLng) / 2.0)
+            mapView.setRegion(MKCoordinateRegionMake(center, MKCoordinateSpanMake(maxLat - minLat, maxLng - minLng)), animated: true)
+            
+        }
+        
+    }
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let id = "pin"
+        let btnInfo = UIButton.init(type: .detailDisclosure)
+        
+        if let view = mapView.dequeueReusableAnnotationView(withIdentifier: id) as? MKPinAnnotationView {
+            view.rightCalloutAccessoryView = btnInfo
+            view.canShowCallout = true
+            view.annotation = annotation
+            return view
+        }
+        let view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: id)
+        view.canShowCallout = true
+        view.rightCalloutAccessoryView = btnInfo
+        return view
+    }
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let user = tableData.filter { (vk) -> Bool in
+            return vk.title! + vk.subtitle! == view.annotation!.title!! + view.annotation!.subtitle!!
+        }.first!
+        performSegue(withIdentifier: "show profile screen", sender: user)
+    }
+}
+

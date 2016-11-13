@@ -1,4 +1,5 @@
 import UIKit
+import Alamofire
 
 class FriendCell: UITableViewCell {
     
@@ -16,15 +17,12 @@ class FriendCell: UITableViewCell {
             lblFio.text = user.fio
             lblCity.text = user.city
 
-            if let url = URL(string: user.avatarLink){
-                URLSession.shared.dataTask(with: url, completionHandler: { (data, resp, error) in
-                    if error != nil { print(error!); return }
-                    
-                    guard let data = data else { return }
-                    if let img = UIImage(data: data){
-                        DispatchQueue.main.async { self.imgAvatar.image = img }
-                    }
-                }).resume()
+            Alamofire.request(user.avatarLink).responseData { (data) in
+                if let imgData = data.data,
+                   let img = UIImage(data: imgData){
+                    self.user.imageAvatar = img
+                    DispatchQueue.main.async { self.imgAvatar.image = img }
+                }
             }
         }
     }
