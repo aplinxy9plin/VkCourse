@@ -55,13 +55,11 @@ extension ProfileController {
         task.send(method: HTTPMethods.GET, onSuccess: { [unowned self] json in
             
             let item = json.first!.1["counters"]
-            self.counters.append(CountItem(item["friends"].stringValue, "friends"))
-            self.counters.append(CountItem(item["photos"].stringValue, "photos"))
-            self.counters.append(CountItem(item["videos"].stringValue, "video"))
-            self.counters.append(CountItem(item["audios"].stringValue, "audio"))
-            self.counters.append(CountItem(item["pages"].stringValue, "pages"))
-            self.counters.append(CountItem(item["followers"].stringValue, "followers"))
-            self.counters.append(CountItem(item["subscriptions"].stringValue, "subscriptions"))
+            _ = ["friends", "photos", "videos", "audios", "pages", "followers", "subscriptions"].map {
+                if item[$0].intValue > 0 {
+                    self.counters.append(CountItem(item[$0].stringValue, $0))
+                }
+            }
             
             DispatchQueue.main.async {
                 self.collectionViewCounts.reloadData()

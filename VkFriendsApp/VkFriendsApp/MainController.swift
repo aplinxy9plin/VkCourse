@@ -118,6 +118,7 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
             self.executingUpdate = false
             
             if json["items"].count > 0 {
+                self.mapView.removeAnnotations(self.tableData)
                 self.tableData.removeAll()
                 
                 for user in json["items"].arrayValue {
@@ -134,7 +135,6 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
                 }
                 DispatchQueue.main.async(execute: {
                     self.tableView.reloadData()
-                    self.mapView.removeAnnotations(self.tableData)
                     self.friendsToMap()
                 })
             }
