@@ -1,0 +1,4 @@
+target 'TODO-Manager' do
+  use_frameworks!
+  pod 'RealmSwift'
+end

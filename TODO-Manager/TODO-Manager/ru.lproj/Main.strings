@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Priority"; ObjectID = "3NB-id-Vz4"; */
+"3NB-id-Vz4.text" = "Приоритет";
+
+/* Class = "UISegmentedControl"; I0d-31-1pm.segmentTitles[0] = "Low"; ObjectID = "I0d-31-1pm"; */
+"I0d-31-1pm.segmentTitles[0]" = "Низкий";
+
+/* Class = "UISegmentedControl"; I0d-31-1pm.segmentTitles[1] = "Average"; ObjectID = "I0d-31-1pm"; */
+"I0d-31-1pm.segmentTitles[1]" = "Средний";
+
+/* Class = "UISegmentedControl"; I0d-31-1pm.segmentTitles[2] = "High"; ObjectID = "I0d-31-1pm"; */
+"I0d-31-1pm.segmentTitles[2]" = "Высокий";
+
+/* Class = "UILabel"; text = "No tasks"; ObjectID = "bfZ-N0-Xfi"; */
+"bfZ-N0-Xfi.text" = "Нет задач";
+
+/* Class = "UITextField"; placeholder = "What to do?"; ObjectID = "sja-6c-7CS"; */
+"sja-6c-7CS.placeholder" = "Какова задача?";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "uWU-8v-zdc"; */
+"uWU-8v-zdc.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "xoR-fe-n2R"; */
+"xoR-fe-n2R.title" = "Сохранить";
+
+/* Class = "UINavigationItem"; title = "Tasks"; ObjectID = "zMp-qa-bNo"; */
+"zMp-qa-bNo.title" = "Задачи";
