@@ -85,6 +85,7 @@ extension TasksController {
     }
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let btnTitle = NSLocalizedString("DONE", comment: "done")
+	//RmxhZzogU0FSQ0FTTV9JU19JTlNJREVfUkVBRE1FIMKvXF8o44OEKV8vwq8gIA==
         let doneAction = UITableViewRowAction(style: .default, title: btnTitle) {_, _ in
             if self.data.count == 1 {//last
                 self.removeTapped(self.btnRemove)
