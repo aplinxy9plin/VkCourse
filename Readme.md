@@ -3,7 +3,7 @@ Michael Galperin
 <hr>
 <a href="https://github.com/piechart/VkCourse/tree/master/CalcDemo" target="_blank">Calculator</a><br>
 A lightweight default calculator built in CS193P Spring 2016 style<br><br>
-![alt tag](CalcDemo/Screens/1.png?raw=true)
+![alt tag](https://github.com/piechart/VkCourse/CalcDemo/Screens/1.png)
 <hr>
 <a href="https://github.com/piechart/VkCourse/tree/master/BanksApp" target="_blank">BanksApp</a><br>
 Sample app demonstrating prepared JSON-file parsing, MVCs navigation, UITableView-using<br><br>
